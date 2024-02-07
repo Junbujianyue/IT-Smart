@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome back NBD's User</h1>
+    <p> Visit our Website <a href="https://naturalbydesign.com">www.naturalbydesign.com</a>.</p>
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Choose an option to start!</h2>
+                </div>
+                <!-- topic-item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <a class="px-4 py-5 bg-white shadow text-center d-block match-height" asp-area="" asp-controller="Clients" asp-action="ClientSection">
+                        <i class="ti-panel icon text-primary d-block mb-4"></i>
+                        <h3 class="mb-3 mt-0">Client Section</h3>
+                        <p class="mb-0">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a class="px-4 py-5 bg-white shadow text-center d-block match-height" asp-area="" asp-controller="Projects" asp-action="ProjectsAndMaintenance">
+                        <i class="ti-credit-card icon text-primary d-block mb-4"></i>
+                        <h3 class="mb-3 mt-0">Projects and Maintenance</h3>
+                        <p class="mb-0">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+					  <a class="px-4 py-5 bg-white shadow text-center d-block match-height" asp-area="" asp-controller="Bids" asp-action="Index">
+                       <i class="ti-package icon text-primary d-block mb-4"></i>
+                        <h3 class="mb-3 mt-0">Bids</h3>
+                        <p class="mb-0">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section px-3 bg-white shadow text-center">
+                        <h2 class="mb-4">Natural by Design Application</h2>
+                        <p class="mb-4">
+                            Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt
+                            consequat quam.
+                        </p>
+                        <a asp-area="" asp-controller="Contact" asp-action="Index" class="btn btn-primary">contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="~/js/script.js"></script>

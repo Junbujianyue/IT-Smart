@@ -1,0 +1,103 @@
+﻿@model NBD3.Models.Client
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Personal Information -->
+            <div class="form-section">
+                <h4>Personal Information</h4>
+                <hr />
+                <div class="form-group">
+                    <label asp-for="ClientCommpanyName" class="control-label"></label>
+                    <input asp-for="ClientCommpanyName" class="form-control" />
+                    <span asp-validation-for="ClientCommpanyName" class="text-danger"></span>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <label asp-for="ClientFirstName" class="control-label"></label>
+                        <input asp-for="ClientFirstName" class="form-control" />
+                        <span asp-validation-for="ClientFirstName" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label asp-for="ClientMiddleName" class="control-label"></label>
+                        <input asp-for="ClientMiddleName" class="form-control" />
+                        <span asp-validation-for="ClientMiddleName" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label asp-for="ClientLastName" class="control-label"></label>
+                        <input asp-for="ClientLastName" class="form-control" />
+                        <span asp-validation-for="ClientLastName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-section">
+                <h4>Contact Information</h4>
+                <hr />
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <label asp-for="ClientPhone" class="control-label"></label>
+                        <input asp-for="ClientPhone" class="form-control" />
+                        <span asp-validation-for="ClientPhone" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="ClientEmail" class="control-label"></label>
+                        <input asp-for="ClientEmail" class="form-control" />
+                        <span asp-validation-for="ClientEmail" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Address Information -->
+            <div class="form-section">
+                <h4>Address Information</h4>
+                <hr />
+                <div class="form-group">
+                    <label asp-for="ClientStreetAddress" class="control-label"></label>
+                    <input asp-for="ClientStreetAddress" class="form-control" />
+                    <span asp-validation-for="ClientStreetAddress" class="text-danger"></span>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <label asp-for="ClientPostalCode" class="control-label"></label>
+                        <input asp-for="ClientPostalCode" class="form-control" />
+                        <span asp-validation-for="ClientPostalCode" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label asp-for="ClientCityAddress" class="control-label"></label>
+                        <input asp-for="ClientCityAddress" class="form-control" />
+                        <span asp-validation-for="ClientCityAddress" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label asp-for="ClientCountryAddress" class="control-label"></label>
+                        <input asp-for="ClientCountryAddress" class="form-control" />
+                        <span asp-validation-for="ClientCountryAddress" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                &nbsp;
+                <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
